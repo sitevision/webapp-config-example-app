@@ -1,5 +1,29 @@
-<h1><%= message %></h1>
+<h1>Text/Textarea</h1>
+<p><strong>Text: </strong><%= text %></p>
+<p><strong>Email: </strong><%= email %></p>
+<p><strong>Number: </strong><%= number %></p>
+<p><strong>Textarea: </strong><%= textarea %></p>
 
-<%= renderer.renderComponent('Name', {
-   name: name
+<h1>Metadata</h1>
+<p><strong>Metadata: </strong><%= metadata %></p>
+<p><strong>Template: </strong><%= template %></p>
+
+<h1>Checkbox</h1>
+<p><strong>Checkbox: </strong><%= checkbox %></p>
+<p><strong>Checkbox boolean: </strong><%= checkboxBoolean %></p>
+
+<h1>Selection</h1>
+<p><strong>Single selection: </strong><%= singleSelection %></p>
+<p><strong>Multiple selection: </strong><%= multipleSelection %></p>
+
+<%= renderer.renderComponent('Image', {
+   image: image
+}) %>
+
+<%= renderer.renderComponent('File', {
+   file: file
+}) %>
+
+<%= renderer.renderComponent('Page', {
+   page: page
 }) %>
