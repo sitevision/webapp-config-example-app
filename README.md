@@ -1,5 +1,5 @@
 # webapp-configuration
-
+The intention of this webapp is to illustrate how you can setup configuration of a webapp.
 ## Setup
 * `git clone https://github.com/sitevision/webapp-boilerplate.git`
 * `cd webapp-config-example-app`
