@@ -3,15 +3,15 @@
 
    var
       router  = require('router'),
-      log     = require('LogUtil'),
+      imageRenderer = require('ImageRenderer'),
       appData = require('appData');
 
    router.get('/', function(req, res) {
-      var message = 'Hello, world!',
-         data = {
+      var data = {
             image: appData.get('image', 'URI', 'displayName', 'creationDate', 'createdBy'),
-            file: appData.get('file', 'URI', 'displayName', 'description', 'identifier'),
-            page: appData.get('page', 'URL', 'displayName', 'published', 'publishDate'),
+            file: appData.get('file', 'URI', 'displayName', 'description'),
+            page: appData.get('page', 'URI', 'displayName', 'published', 'publishDate'),
+            renderedImage: getRenderedImage(),
             text: appData.get('text'),
             email: appData.get('email'),
             number: appData.get('number'),
@@ -26,4 +26,10 @@
 
       res.render('/', data);
    });
+
+   function getRenderedImage() {
+      imageRenderer.update(appData.getNode('image'));
+
+      return imageRenderer.render();
+   }
 }());
