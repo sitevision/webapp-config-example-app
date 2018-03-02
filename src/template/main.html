@@ -16,17 +16,11 @@
 <p><strong>Single selection: </strong><%= singleSelection %></p>
 <p><strong>Multiple selection: </strong><%= multipleSelection %></p>
 
-<%= renderer.renderComponent('Image', {
-   image: image
-}) %>
+<%= renderer.renderComponent('Image') %>
 
-<%= renderer.renderComponent('File', {
-   file: file
-}) %>
+<%= renderer.renderComponent('File') %>
 
-<%= renderer.renderComponent('Page', {
-   page: page
-}) %>
+<%= renderer.renderComponent('Page') %>
 
 <h1>Rendered Image</h1>
 <%= renderedImage %>

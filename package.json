@@ -1,11 +1,11 @@
 {
-  "name": "webapp-boilerplate",
+  "name": "webapp-config-example-app",
   "version": "1.0.0",
-  "description": "A simple SiteVision web app boilerplate",
+  "description": "A WebApp config example app",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sitevision/webapp-boilerplate.git"
+    "url": "git+https://github.com/sitevision/webapp-config-example-app.git"
   },
   "scripts": {
     "setup": "grunt setup",
@@ -16,9 +16,9 @@
   "license": "MIT",
   "author": "SiteVision AB",
   "bugs": {
-    "url": "https://github.com/sitevision/webapp-boilerplate/issues"
+    "url": "https://github.com/sitevision/webapp-config-example-app/issues"
   },
-  "homepage": "https://github.com/sitevision/webapp-boilerplate#readme",
+  "homepage": "https://github.com/sitevision/webapp-config-example-app#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-compress": "^1.4.3",

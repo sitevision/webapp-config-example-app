@@ -1,11 +1,17 @@
 define(function(require) {
    'use strict';
 
-   var Component     = require('Component'),
-      template       = require('/template/image');
+   var
+      _             = require('underscore'),
+      Component     = require('Component'),
+      template      = require('/template/image');
 
    return Component.extend({
 
-      template: template
+      template: template,
+
+      filterState: function(state) {
+         return _.extend({}, {image: state.image});
+      }
    });
 });
