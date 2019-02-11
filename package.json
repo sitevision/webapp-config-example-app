@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/sitevision/webapp-config-example-app#readme",
   "devDependencies": {
-    "inquirer": "^5.2.0",
-    "zip-dir": "^1.0.2",
-    "jsonfile": "^4.0.0",
-    "request": "^2.85.0"
+    "inquirer": "^6.2.2",
+    "jsonfile": "^5.0.0",
+    "request": "^2.88.0",
+    "zip-dir": "^1.0.2"
   }
 }

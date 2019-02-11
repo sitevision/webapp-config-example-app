@@ -1,3 +1,5 @@
+//Uncomment when using self-signed or otherwise incorrect certificates
+//process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 var
    request       = require('request'),
    properties    = require('../util/properties'),
@@ -16,6 +18,10 @@ var
          return console.log('Addon creation successful: \n', JSON.stringify(JSON.parse(body), null, 2));
       }
 
-      console.log('Addon creation failed: \n', JSON.stringify(JSON.parse(body), null, 2));
+      if (body) {
+         console.log('Addon creation failed: \n', JSON.stringify(JSON.parse(body), null, 2));
+      } else {
+         console.log(`Addon creation failed, status code: ${httpResponse.statusCode}`);
+      }
    });
 })();
